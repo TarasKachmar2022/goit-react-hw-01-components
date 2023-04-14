@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export function ProfileCard({avatar, username, tag, location, stats:{followers, views, likes}}) {
+export function Profile({avatar, username, tag, location, stats:{followers, views, likes}}) {
     return (
         <div>
             <div>
@@ -31,7 +31,7 @@ export function ProfileCard({avatar, username, tag, location, stats:{followers, 
     );
 };
 
-ProfileCard.propTypes = {
+Profile.propTypes = {
     avatar: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
