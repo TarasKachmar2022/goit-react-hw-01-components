@@ -1,7 +1,9 @@
 import { Profile } from './profile/Profile';
 import { Statistics } from './statistics/Statistics';
+import { FriendList } from './friendList/FriendList';
 import user from '../user.json';
 import data from '../data.json';
+import friends from '../friends.json';
 
 export const App = () => {
   return (
@@ -12,20 +14,18 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
-      >
+    >
       <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-        />
-      <Statistics
-        title="Upload stats"
-        stats={data}
       />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };
