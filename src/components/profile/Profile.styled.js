@@ -7,6 +7,7 @@ export const ProfileCard = styled.div`
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06), 0px 2px 2px rgba(0, 0, 0, 0.06),
     0px 2px 3px rgba(0, 0, 0, 0.06);
   padding-top: 10px;
+  margin-bottom: 20px;
 `;
 
 export const ProfileInfo = styled.div`
@@ -52,8 +53,6 @@ export const ProfileItem = styled.li`
   justify-content: space-around;
   padding: 25px;
   border-radius: 5px;
-
-  // border: 1px solid ${p => p.theme.colors.grey};
 `;
 
 export const ProfileInfoName = styled.span`
